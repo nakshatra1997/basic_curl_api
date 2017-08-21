@@ -14,7 +14,6 @@ $response=curl_exec($curl);
 $data=json_decode($response);
 // print_r($data);
 //displaying the data all attributes
-
 for($a=0;$a<count($data);$a++)
 {
 	echo $data[$a]->account_id.",";

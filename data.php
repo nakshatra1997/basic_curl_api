@@ -5,7 +5,6 @@ $myVar=$_POST['myVar'];
 //connecting with database
 $conn=mysqli_connect("localhost","root","","tasks") or die("error");
 //executing the query
-
 $result=mysqli_query($conn,'SELECT * FROM account WHERE account_id ='.$myVar)or die("error") ;
 //an array to record data
 $data=array();
